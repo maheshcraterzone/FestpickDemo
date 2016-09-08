@@ -1,0 +1,78 @@
+<xml>
+   <Award>
+      <key>Select Award</key>
+	  <value>-1</value>
+   </Award>
+   <Award>
+      <key>Golden Pyramid</key>
+	  <value>Golden Pyramid</value>
+   </Award>
+   <Award>
+      <key>Silver Pyramid</key>
+	  <value>Silver Pyramid</value>
+   </Award>
+   <Award>
+      <key>Best Screenplay</key>
+	  <value>Best Screenplay</value>
+   </Award>
+    <Award>
+      <key>Best Artistic Contribution</key>
+	  <value>Best Artistic Contribution</value>
+   </Award>
+   <Award>
+      <key>Special Mention</key>
+	  <value>Special Mention</value>
+   </Award>
+   <Award>
+      <key>Best Arabic Film</key>
+	  <value>Best Arabic Film</value>
+   </Award>
+    <Award>
+      <key>FIPRESCI Prize</key>
+	  <value>FIPRESCI Prize</value>
+   </Award>
+   <Award>
+      <key>Jury Award</key>
+	  <value>Jury Award</value>
+   </Award>
+   <Award>
+      <key>Best Director</key>
+	  <value>Best Director</value>
+   </Award>
+   <Award>
+      <key>Jury Prize for Best Cinematography and Artistic Direction</key>
+	  <value>Jury Prize for Best Cinematography and Artistic Direction</value>
+   </Award>
+    <Award>
+      <key>Cairo Film Critics' Week</key>
+	  <value>Cairo Film Critics' Week</value>
+   </Award>
+    <Award>
+      <key>Special Award</key>
+	  <value>Special Award</value>
+   </Award>
+    <Award>
+      <key>Tahrir Square Prize</key>
+	  <value>Tahrir Square Prize</value>
+   </Award>
+   <Award>
+      <key>Official Selection</key>
+	  <value>Official Selection</value>
+   </Award>
+   <Award>
+      <key>Best Actor</key>
+	  <value>Best Actor</value>
+   </Award>
+   <Award>
+      <key>Best Actress</key>
+	  <value>Best Actress</value>
+   </Award>
+      <Award>
+      <key>Naguib Mahfouz Award for the Best First or Second Work</key>
+	  <value>Naguib Mahfouz Award for the Best First or Second Work</value>
+   </Award>
+   <Award>
+      <key>Lifetime Achievement Award</key>
+	  <value>Lifetime Achievement Award</value>
+   </Award>
+</xml>

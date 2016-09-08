@@ -1,0 +1,294 @@
+<xml>
+   <Award>
+      <key>Select Award</key>
+	  <value>-1</value>
+   </Award>
+   <Award>
+      <key>Palme d'Or</key>
+	  <value>Palme d'Or</value>
+   </Award>
+   <Award>
+      <key>Grand Prize of the Jury</key>
+	  <value>Grand Prize of the Jury</value>
+   </Award>
+   <Award>
+      <key>Jury Prize</key>
+	  <value>Jury Prize</value>
+   </Award>
+    <Award>
+      <key>Best Actor</key>
+	  <value>Best Actor</value>
+   </Award>
+   <Award>
+      <key>Best Actress</key>
+	  <value>Best Actress</value>
+   </Award>
+   <Award>
+      <key>Best Director</key>
+	  <value>Best Director</value>
+   </Award>
+    <Award>
+      <key>Best Screenplay</key>
+	  <value>Best Screenplay</value>
+   </Award>
+   <Award>
+      <key>Honorary Golden Palm</key>
+	  <value>Honorary Golden Palm</value>
+   </Award>
+   <Award>
+      <key>Golden Camera</key>
+	  <value>Golden Camera</value>
+   </Award>
+   <Award>
+      <key>Cinefondation Award</key>
+	  <value>Cinefondation Award</value>
+   </Award>
+    <Award>
+      <key>Un Certain Regard Award</key>
+	  <value>Un Certain Regard Award</value>
+   </Award>
+    <Award>
+      <key>Un Certain Regard Jury Prize</key>
+	  <value>Un Certain Regard Jury Prize</value>
+   </Award>
+    <Award>
+      <key>Critics Week Grand Prize</key>
+	  <value>Critics Week Grand Prize</value>
+   </Award>
+   <Award>
+      <key>SACD Award</key>
+	  <value>SACD Award</value>
+   </Award>
+   <Award>
+      <key>Canal+ Award</key>
+	  <value>Canal+ Award</value>
+   </Award>
+   <Award>
+      <key>Grand Golden Rail</key>
+	  <value>Grand Golden Rail</value>
+   </Award>
+   <Award>
+      <key>Small Golden Rail</key>
+	  <value>Small Golden Rail</value>
+   </Award>
+   <Award>
+      <key>Golden Coach</key>
+	  <value>Golden Coach</value>
+   </Award>
+   <Award>
+      <key>SACD Prize (Directors' Fortnight)</key>
+	  <value>SACD Prize (Directors' Fortnight)</value>
+   </Award>
+   <Award>
+      <key>Label Europa Cinemas</key>
+	  <value>Label Europa Cinemas</value>
+   </Award>
+    <Award>
+      <key>C.I.C.A.E. Award</key>
+	  <value>C.I.C.A.E. Award</value>
+   </Award>
+   <Award>
+      <key>FIPRESCI Prize</key>
+	  <value>FIPRESCI Prize</value>
+   </Award>
+   <Award>
+      <key>Prize of the Ecumenical Jury</key>
+	  <value>Prize of the Ecumenical Jury</value>
+   </Award>
+    <Award>
+      <key>Prize of the Ecumenical Jury - Special Mention</key>
+	  <value>Prize of the Ecumenical Jury - Special Mention</value>
+   </Award>
+   <Award>
+      <key>Fran?ois Chalais Award</key>
+	  <value>Fran?ois Chalais Award</value>
+   </Award>
+   <Award>
+      <key>Chopard Trophy</key>
+	  <value>Chopard Trophy</value>
+   </Award>
+   <Award>
+      <key>Palme d'Or - Best Short Film</key>
+	  <value>Palme d'Or - Best Short Film</value>
+   </Award>
+    <Award>
+      <key>Presente imperfecto</key>
+	  <value>Presente imperfecto</value>
+   </Award>
+    <Award>
+      <key>Vulcain Prize for the Technical Artist</key>
+	  <value>Vulcain Prize for the Technical Artist</value>
+   </Award>
+    <Award>
+      <key>Illy Prize</key>
+	  <value>Illy Prize</value>
+   </Award>
+   <Award>
+      <key>Illy Prize - Special Mention</key>
+	  <value>Illy Prize - Special Mention</value>
+   </Award>
+   <Award>
+      <key>Queer Palm</key>
+	  <value>Queer Palm</value>
+   </Award>
+   <Award>
+      <key>Un Certain Regard - A Certain Talent Prize</key>
+	  <value>Un Certain Regard - A Certain Talent Prize</value>
+   </Award>
+    <Award>
+      <key>Un Certain Regard - Avenir Prize</key>
+	  <value>Un Certain Regard - Avenir Prize</value>
+   </Award>
+   <Award>
+      <key>Un Certain Regard - Directing Prize</key>
+	  <value>Un Certain Regard - Directing Prize</value>
+   </Award>
+   <Award>
+      <key>Discovery Award</key>
+	  <value>Discovery Award</value>
+   </Award>
+   <Award>
+      <key>Gan Foundation Support for Distribution</key>
+	  <value>Gan Foundation Support for Distribution</value>
+   </Award>
+   <Award>
+      <key>Palm Dog</key>
+	  <value>Palm Dog</value>
+   </Award>
+    <Award>
+      <key>Palm Dog - Jury Prize</key>
+	  <value>Palm Dog - Jury Prize</value>
+   </Award>
+   <Award>
+      <key>Queer Palm - Short Film</key>
+	  <value>Queer Palm - Short Film</value>
+   </Award>
+   <Award>
+      <key>Golden Eye</key>
+	  <value>Golden Eye</value>
+   </Award>
+    <Award>
+      <key>Golden Eye - Special Mention</key>
+	  <value>Golden Eye - Special Mention</value>
+   </Award>
+   <Award>
+      <key>Queer Palm - Special Mention</key>
+	  <value>Queer Palm - Special Mention</value>
+   </Award>
+   <Award>
+      <key>Palm DogManitarian Award</key>
+	  <value>Palm DogManitarian Award</value>
+   </Award>
+   <Award>
+      <key>Cannes Soundtrack Award</key>
+	  <value>Cannes Soundtrack Award</value>
+   </Award>
+    <Award>
+      <key>Special Mention</key>
+	  <value>Special Mention</value>
+   </Award>
+    <Award>
+      <key>Un Certain Regard - Special Jury Prize</key>
+	  <value>Un Certain Regard - Special Jury Prize</value>
+   </Award>
+    <Award>
+      <key>Un Certain Regard - Best Actor</key>
+	  <value>Un Certain Regard - Best Actor</value>
+   </Award>
+   <Award>
+      <key>France 4 Visionary Award</key>
+	  <value>France 4 Visionary Award</value>
+   </Award>
+   <Award>
+      <key>Un Certain Regard - Ensemble Prize</key>
+	  <value>Un Certain Regard - Ensemble Prize</value>
+   </Award>
+   <Award>
+      <key>Prize of the Ecumenical Jury - Special Award</key>
+	  <value>Prize of the Ecumenical Jury - Special Award</value>
+   </Award>
+   <Award>
+      <key>Palm Dog - Special Mention</key>
+	  <value>Palm Dog - Special Mention</value>
+   </Award>
+   <Award>
+      <key>Fran?ois Chalais Award - Special Mention</key>
+	  <value>Fran?ois Chalais Award - Special Mention</value>
+   </Award>
+   <Award>
+      <key>Vulcain Prize for the Technical Artist - Special Mention</key>
+	  <value>Vulcain Prize for the Technical Artist - Special Mention</value>
+   </Award>
+   <Award>
+      <key>Critics Week - Special Mention</key>
+	  <value>Critics Week - Special Mention</value>
+   </Award>
+    <Award>
+      <key>Nikon Discovery Award</key>
+	  <value>Nikon Discovery Award</value>
+   </Award>
+   <Award>
+      <key>SACD Prize (Directors' Fortnight) - Special Mention</key>
+	  <value>SACD Prize (Directors' Fortnight) - Special Mention</value>
+   </Award>
+   <Award>
+      <key>Un Certain Regard - Best Actress</key>
+	  <value>Un Certain Regard - Best Actress</value>
+   </Award>
+    <Award>
+      <key>ACID Award</key>
+	  <value>ACID Award</value>
+   </Award>
+   <Award>
+      <key>Award of the Youth</key>
+	  <value>Award of the Youth</value>
+   </Award>
+   <Award>
+      <key>Prix Regards Jeune</key>
+	  <value>Prix Regards Jeune</value>
+   </Award>
+   <Award>
+      <key>American Pavillon's Emerging Filmmaker Showcase</key>
+	  <value>American Pavillon's Emerging Filmmaker Showcase</value>
+   </Award>
+    <Award>
+      <key>Un Certain Regard - Special Distinction of the Jury</key>
+	  <value>Un Certain Regard - Special Distinction of the Jury</value>
+   </Award>
+    <Award>
+      <key>Discovery Award - Special Mention</key>
+	  <value>Discovery Award - Special Mention</value>
+   </Award>
+    <Award>
+      <key>Young Critics Award</key>
+	  <value>Young Critics Award</value>
+   </Award>
+   <Award>
+      <key>FIPRESCI Prize - Special Mention</key>
+	  <value>FIPRESCI Prize - Special Mention</value>
+   </Award>
+   <Award>
+      <key>S?ance "Coup de coeur"</key>
+	  <value>S?ance "Coup de coeur"</value>
+   </Award>
+   <Award>
+      <key>Jury Prize - Short Film</key>
+	  <value>Jury Prize - Short Film</value>
+   </Award>
+    <Award>
+      <key>SFR Prize</key>
+	  <value>SFR Prize</value>
+   </Award>
+   <Award>
+      <key>France Culture Award</key>
+	  <value>France Culture Award</value>
+   </Award>
+   <Award>
+      <key>Regards Jeunes Prize</key>
+	  <value>Regards Jeunes Prize</value>
+   </Award>
+    <Award>
+      <key>Cinema Prize of the French National Education System</key>
+	  <value>Cinema Prize of the French National Education System</value>
+   </Award>
+</xml>

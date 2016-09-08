@@ -1,0 +1,34 @@
+<xml>
+   <Award>
+      <key>Select Award</key>
+	  <value>-1</value>
+   </Award>
+   <Award>
+      <key>Vienna Film Award</key>
+	  <value>Vienna Film Award</value>
+   </Award>
+   <Award>
+      <key>FIPRESCI Prize</key>
+	  <value>FIPRESCI Prize</value>
+   </Award>
+   <Award>
+      <key>No Awards</key>
+	  <value>No Awards</value>
+   </Award>
+    <Award>
+      <key>Vienna Film Award - Special Mention</key>
+	  <value>Vienna Film Award - Special Mention</value>
+   </Award>
+   <Award>
+      <key>Short Film Award</key>
+	  <value>Short Film Award</value>
+   </Award>
+   <Award>
+      <key>Reader Jury of the "Standard"</key>
+	  <value>Reader Jury of the "Standard"</value>
+   </Award>
+    <Award>
+      <key>Reader Jury of the "Standard" - Honorable Mention</key>
+	  <value>Reader Jury of the "Standard" - Honorable Mention</value>
+   </Award>   
+</xml>

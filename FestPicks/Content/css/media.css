@@ -1,0 +1,149 @@
+@media (max-width:1100px){
+	
+}
+
+@media (max-width:800px){
+	
+body{ font-size:12px;}
+.m_menu{ display:block;}
+.navigation{ display:none;}
+.navigation.home { display:block;}
+.home .m_menu { display: none;}
+
+
+.navigation ul li { display: inline-block; float: left; list-style: outside none none;  margin: 0 0px 15px 0;  width: 100%;}
+.navigation ul li a { display: inline-block;}
+.bottom_bar .logo { position: relative; text-align: center; width: 100%;}
+.bottom_bar .social { float: none;  margin: auto; max-width: 320px; padding: 0;}
+.bottom_bar .social ul{ float: left;  margin: -87px 0px 20px; padding: 0;}
+
+.bottom_bar .social ul li { display:block; float: left; list-style: outside none none; margin: 0 5px 0 0; width: 66px;}
+.bottom_bar .social ul li a{ display:block; float: left; width: 100%;}
+.bottom_bar .social ul li img{ max-width:100%; float:left;}
+.explore_carousel { padding:150px 150px 50px;}
+
+
+.explore_detail .festival_detail { padding: 0 20px;}
+
+.explore_detail .festival_detail .content {  width: 62%;}
+.selection_main .content .selections .item.big { width: 32%;}
+.selection_main .content .selections .item { width: 19%;}
+
+
+.selection_main .content .selections .item .detail h3 {font-size: 14px;}
+.selection_main .content .selections .item .detail p {font-size: 12px;}
+
+.film_details .content { margin: -70% 0 30px;}
+
+
+.explore_map .explore_carousel {padding:150px 150px 50px;}
+
+
+.watch_form .form-field.genre { width: 40%;}
+.watch_form .form-field.title { width: 47%;}
+.watch_form .form-field.year { width: 40%;}
+.watch_form .form-field.director { width: 47%;}
+.watch_form .form-field.actor { width: 40%;}
+.watch_form .form-field.film { width: 47%;}
+.watch_form .form-field.award { padding: 0 25%; width: 100%;}
+
+.submit_film .form-field.name{ width:40%;}
+.submit_film .form-field.email{ width:47%;}
+.submit_film .form-field.phone{ width:40%;}
+.submit_film .form-field.title{ width:47%;}
+.submit_film .form-field.year{ width:40%;}
+.submit_film .form-field.director{ width:47%;}
+.submit_film .form-field.festival{  padding: 0 25%; width: 100%;}
+
+
+.contact_us .form { float: left; width: 70%;}
+.contact_us .form-field { float: left; margin: 0 0 25px 17px;}
+
+.selection_main .content .selections .item:hover .detail{ display:none;}
+
+.map_main .content #map{ width:100% !important;}
+
+
+.explore_detail .festival_detail .content p {    font-size: 12px;}
+
+.explore_detail .festival_detail .content h1 { color: #fff; font-size:20px; margin: 0 0 10px;}
+
+
+.submit_film_content .content { padding: 65px 15px 105px;}
+
+.selection_main .content { padding: 25px 15px 95px;}
+
+.map_main .content {padding: 25px 15px 85px;}
+
+.location_map .content {padding: 45px 15px 95px;}
+.film_details .content {padding: 25px 25px 95px;}
+
+}
+
+
+@media (max-width:400px){
+
+home .banner_main { min-height: 460px; width: 100%;}
+
+.explore_carousel { padding:150px 50px 50px;}
+.explore_carousel .owl-item { max-height: inherit;}
+.explore{ background:none;}
+
+	
+.explore_detail .festival_detail .content {  width: 100%; margin:20px 0px 0px 0px;}
+.selection_main .content .selections .item.big { width: 100%;}
+.selection_main .content .selections .item { width: 100%;}
+
+.film_details .content .thumb{ width:100%; text-align:center; margin:0px 0px 20px 0px;}
+.film_details .content .detail_content{width:100%; margin:0px 0px 12px 0px;}
+.film_details .content .video{width:100%;}
+.film_details .content { margin: -150% 0 30px;}
+
+.explore_map .explore_carousel {padding:150px 50px 50px;}
+.map_main .content h2{ background:#333; font-size:20px;}
+.selection_main .content h2{ background:#333;  font-size:20px;}
+
+.watch_form{ padding:0px 5% 15px;}
+.watch_form .form-field{ margin:0px 0px 20px 0px}
+.watch_form .form-field.genre { width: 100%;}
+.watch_form .form-field.title { width: 100%;}
+.watch_form .form-field.year { width: 100%;}
+.watch_form .form-field.director { width: 100%;}
+.watch_form .form-field.actor { width: 100%;}
+.watch_form .form-field.film { width: 100%;}
+.watch_form .form-field.award { padding: 0 0%; width: 100%;}
+
+
+.submit_film { padding:0px 5% 15px;}
+.submit_film .form-field{ margin:0px 0px 20px 0px}
+.submit_film .form-field.name{ width:100%;}
+.submit_film .form-field.email{ width:100%;}
+.submit_film .form-field.phone{ width:100%;}
+.submit_film .form-field.title{ width:100%;}
+.submit_film .form-field.year{ width:100%;}
+.submit_film .form-field.director{ width:100%;}
+.submit_film .form-field.festival{  padding: 0 0%; width: 100%;}
+
+
+.contact_us .form { float: left; width: 100%; padding:0px 15px;}
+.contact_us .form-field { float: left; margin: 0 0 25px 0px; width:100%}
+
+.contact_us .form-field.name{ width:100%;}
+.contact_us .form-field.email{ width:100%;}
+.contact_us .form-field.phone{ width:100%;}
+.contact_us .form-field.msg{ width:100%;}
+
+.address{ float:right; width:100%; padding:20px 5% 0px }
+
+
+.contact_us .button .submit, .watch_form .button .submit, .submit_film .button .submit {font-size: 14px;  padding: 15px 45px;}
+
+
+
+.submit_film_content p { font-size: 14px;}
+
+.submit_film_content .content img{ max-width:80%;}
+
+
+}
+

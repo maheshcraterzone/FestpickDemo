@@ -1,0 +1,42 @@
+<xml>
+   <Award>
+      <key>Select Award</key>
+	  <value>-1</value>
+   </Award>
+   <Award>
+      <key>Sydney Film Prize</key>
+	  <value>Sydney Film Prize</value>
+   </Award>
+   <Award>
+      <key>Audience Award</key>
+	  <value>Audience Award</value>
+   </Award>
+   <Award>
+      <key>Dendy Award for Best Short Fiction</key>
+	  <value>Dendy Award for Best Short Fiction</value>
+   </Award>
+    <Award>
+      <key>Award for Australian Short Film</key>
+	  <value>Award for Australian Short Film</value>
+   </Award>
+   <Award>
+      <key>Rouben Mamoulian Award</key>
+	  <value>Rouben Mamoulian Award</value>
+   </Award>
+   <Award>
+      <key>Event Cinemas Australian Short Screenplay Award</key>
+	  <value>Event Cinemas Australian Short Screenplay Award</value>
+   </Award>
+   <Award>
+      <key>Yoram Gross Award</key>
+	  <value>Yoram Gross Award</value>
+   </Award>
+    <Award>
+      <key>Australian Documentary Prize</key>
+	  <value>Australian Documentary Prize</value>
+   </Award>
+   <Award>
+      <key>Peter Rasmussen Innovation Award</key>
+	  <value>Peter Rasmussen Innovation Award</value>
+   </Award>
+</xml>

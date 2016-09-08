@@ -1,0 +1,201 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="filmfestivaldb.Store" Provider="MySql.Data.MySqlClient" ProviderManifestToken="5.7" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="festivaldetails">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="FestivalName" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Lat" Type="decimal" Precision="10" Scale="8" Nullable="false" />
+          <Property Name="Lng" Type="decimal" Precision="11" Scale="8" Nullable="false" />
+          <Property Name="City" Type="varchar" MaxLength="60" />
+          <Property Name="State" Type="varchar" MaxLength="60" />
+          <Property Name="Country" Type="varchar" MaxLength="60" />
+          <Property Name="Website" Type="varchar" MaxLength="255" />
+          <Property Name="FestivalArtUrl" Type="varchar" MaxLength="512" />
+          <Property Name="NextFestival" Type="varchar" MaxLength="50" />
+          <Property Name="About" Type="blob" />
+          <Property Name="FestivalYear" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="moviesdetails">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="uint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="FestivalShortName" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="FestivalFullName" Type="varchar" MaxLength="80" Nullable="false" />
+          <Property Name="Award" Type="varchar" MaxLength="100" Nullable="false" />
+          <Property Name="Category" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Placing" Type="varchar" MaxLength="45" Nullable="false" />
+          <Property Name="Title" Type="varchar" MaxLength="255" />
+          <Property Name="AwardYear" Type="varchar" MaxLength="10" />
+          <Property Name="ReleaseYear" Type="varchar" MaxLength="10" />
+          <Property Name="Rated" Type="varchar" MaxLength="10" />
+          <Property Name="Released" Type="varchar" MaxLength="45" />
+          <Property Name="Runtime" Type="varchar" MaxLength="10" />
+          <Property Name="Genre" Type="varchar" MaxLength="255" />
+          <Property Name="Director" Type="varchar" MaxLength="255" />
+          <Property Name="Writer" Type="blob" />
+          <Property Name="Actors" Type="varchar" MaxLength="255" />
+          <Property Name="Description" Type="blob" />
+          <Property Name="Language" Type="varchar" MaxLength="255" />
+          <Property Name="Country" Type="varchar" MaxLength="255" />
+          <Property Name="PosterLink" Type="varchar" MaxLength="2083" />
+          <Property Name="Metascore" Type="varchar" MaxLength="255" />
+          <Property Name="Rating" Type="varchar" MaxLength="10" />
+          <Property Name="imdbVotes" Type="varchar" MaxLength="45" />
+          <Property Name="imdbID" Type="varchar" MaxLength="45" />
+          <Property Name="TrailerLink" Type="varchar" MaxLength="2083" />
+          <Property Name="MovieLink" Type="varchar" MaxLength="2083" />
+          <Property Name="YoutubeEmbeddedCode" Type="blob" />
+          <Property Name="Payload" Type="blob" />
+        </EntityType>
+        <EntityContainer Name="filmfestivaldbStoreContainer">
+          <EntitySet Name="festivaldetails" EntityType="Self.festivaldetails" Schema="filmfestivaldb" store:Type="Tables" />
+          <EntitySet Name="moviesdetails" EntityType="Self.moviesdetails" Schema="filmfestivaldb" store:Type="Tables" />
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="filmfestivaldb" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="festivaldetail">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="FestivalName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Lat" Type="Decimal" Nullable="false" />
+          <Property Name="Lng" Type="Decimal" Nullable="false" />
+          <Property Name="City" Type="String" MaxLength="60" FixedLength="false" Unicode="false" />
+          <Property Name="State" Type="String" MaxLength="60" FixedLength="false" Unicode="false" />
+          <Property Name="Country" Type="String" MaxLength="60" FixedLength="false" Unicode="false" />
+          <Property Name="Website" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="FestivalArtUrl" Type="String" MaxLength="512" FixedLength="false" Unicode="false" />
+          <Property Name="NextFestival" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="About" Type="Binary" MaxLength="Max" FixedLength="false" />
+          <Property Name="FestivalYear" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityContainer Name="filmfestivaldbEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="festivaldetails" EntityType="Self.festivaldetail" />
+          <EntitySet Name="moviesdetails" EntityType="filmfestivaldb.moviesdetail" />
+        </EntityContainer>
+        <EntityType Name="moviesdetail">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="FestivalShortName" Type="String" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="FestivalFullName" Type="String" Nullable="false" MaxLength="80" FixedLength="false" Unicode="false" />
+          <Property Name="Award" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="Category" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Placing" Type="String" Nullable="false" MaxLength="45" FixedLength="false" Unicode="false" />
+          <Property Name="Title" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="AwardYear" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="ReleaseYear" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="Rated" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="Released" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+          <Property Name="Runtime" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="Genre" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="Director" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="Writer" Type="Binary" MaxLength="Max" FixedLength="false" />
+          <Property Name="Actors" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="Description" Type="Binary" MaxLength="Max" FixedLength="false" />
+          <Property Name="Language" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="Country" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="PosterLink" Type="String" MaxLength="2083" FixedLength="false" Unicode="false" />
+          <Property Name="Metascore" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="Rating" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="imdbVotes" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+          <Property Name="imdbID" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+          <Property Name="TrailerLink" Type="String" MaxLength="2083" FixedLength="false" Unicode="false" />
+          <Property Name="MovieLink" Type="String" MaxLength="2083" FixedLength="false" Unicode="false" />
+          <Property Name="YoutubeEmbeddedCode" Type="Binary" MaxLength="Max" FixedLength="false" />
+          <Property Name="Payload" Type="Binary" MaxLength="Max" FixedLength="false" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="filmfestivaldbStoreContainer" CdmEntityContainer="filmfestivaldbEntities">
+          <EntitySetMapping Name="festivaldetails">
+            <EntityTypeMapping TypeName="filmfestivaldb.festivaldetail">
+              <MappingFragment StoreEntitySet="festivaldetails">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="FestivalName" ColumnName="FestivalName" />
+                <ScalarProperty Name="Lat" ColumnName="Lat" />
+                <ScalarProperty Name="Lng" ColumnName="Lng" />
+                <ScalarProperty Name="City" ColumnName="City" />
+                <ScalarProperty Name="State" ColumnName="State" />
+                <ScalarProperty Name="Country" ColumnName="Country" />
+                <ScalarProperty Name="Website" ColumnName="Website" />
+                <ScalarProperty Name="FestivalArtUrl" ColumnName="FestivalArtUrl" />
+                <ScalarProperty Name="NextFestival" ColumnName="NextFestival" />
+                <ScalarProperty Name="About" ColumnName="About" />
+                <ScalarProperty Name="FestivalYear" ColumnName="FestivalYear" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="moviesdetails">
+            <EntityTypeMapping TypeName="filmfestivaldb.moviesdetail">
+              <MappingFragment StoreEntitySet="moviesdetails">
+                <ScalarProperty Name="Payload" ColumnName="Payload" />
+                <ScalarProperty Name="YoutubeEmbeddedCode" ColumnName="YoutubeEmbeddedCode" />
+                <ScalarProperty Name="MovieLink" ColumnName="MovieLink" />
+                <ScalarProperty Name="TrailerLink" ColumnName="TrailerLink" />
+                <ScalarProperty Name="imdbID" ColumnName="imdbID" />
+                <ScalarProperty Name="imdbVotes" ColumnName="imdbVotes" />
+                <ScalarProperty Name="Rating" ColumnName="Rating" />
+                <ScalarProperty Name="Metascore" ColumnName="Metascore" />
+                <ScalarProperty Name="PosterLink" ColumnName="PosterLink" />
+                <ScalarProperty Name="Country" ColumnName="Country" />
+                <ScalarProperty Name="Language" ColumnName="Language" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="Actors" ColumnName="Actors" />
+                <ScalarProperty Name="Writer" ColumnName="Writer" />
+                <ScalarProperty Name="Director" ColumnName="Director" />
+                <ScalarProperty Name="Genre" ColumnName="Genre" />
+                <ScalarProperty Name="Runtime" ColumnName="Runtime" />
+                <ScalarProperty Name="Released" ColumnName="Released" />
+                <ScalarProperty Name="Rated" ColumnName="Rated" />
+                <ScalarProperty Name="ReleaseYear" ColumnName="ReleaseYear" />
+                <ScalarProperty Name="AwardYear" ColumnName="AwardYear" />
+                <ScalarProperty Name="Title" ColumnName="Title" />
+                <ScalarProperty Name="Placing" ColumnName="Placing" />
+                <ScalarProperty Name="Category" ColumnName="Category" />
+                <ScalarProperty Name="Award" ColumnName="Award" />
+                <ScalarProperty Name="FestivalFullName" ColumnName="FestivalFullName" />
+                <ScalarProperty Name="FestivalShortName" ColumnName="FestivalShortName" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
