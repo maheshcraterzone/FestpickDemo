@@ -13,7 +13,7 @@ namespace FestPicks.Views
     public partial class FestivalDetails : System.Web.UI.Page
     {
         #region Constants
-        private const string BANNER_DATA1 = "<div class=\"inner\"><div class=\"item_inner\"><a href=\"FilmDetails?Id=";
+        private const string BANNER_DATA1 = "<div class=\"inner\"><div class=\"item_inner\"><a href=\"FilmDetails.aspx?Id=";
         private const string BANNER_DATA2 = "\"><img runat=\"server\" src=\"";
         private const string BANNER_DATA3 = "\" alt=\"img\" >";
         private const string BANNER_DATA4 = "<div class=\"detail\"><h3>";
@@ -25,7 +25,7 @@ namespace FestPicks.Views
         private const string BANNER_DATA10 = "</p><div class=\"time\"><i class=\"fa fa-clock-o\"></i> RunTime:  ";
         private const string BANNER_DATA11 = "</div></div></a></div></div>";
         private const string FID = "Id";
-        private const string EXPLORE_FESTIVAL = "../Views/ExploreFestival";
+        private const string EXPLORE_FESTIVAL = "../Views/ExploreFestival.aspx";
         private const string DIV = "div";
         private const string CSS_CLASS = "class";
         private const string CSS_CLASS_NAME = "item big";

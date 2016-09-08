@@ -23,10 +23,14 @@ a:active{text-decoration: none; color: #333;}
 
 /*==== EXPLORE HERE ======*/
 
-.explore{ background:url(../images/trans_bg.png) no-repeat center top; float:left; width:100%; height:100%; padding:0px 0px 50px 0px;}
+.explore{ background:url(../images/trans_bg.png) no-repeat center top; float:left; width:100%; height:100%; padding:50px 0px 50px 0px;}
 .explore_carousel{ float:left; width:100%; padding:200px 210px 50px; }
 
-.explore_map .explore_carousel{ float:left; width:100%; padding:100px 210px 50px; text-align:center;}
+.explore_map .explore_carousel{ float:left; width:100%; padding:00px 210px 50px; text-align:center;}
+.explore_map .explore_carousel .navigation{ margin:0px 0px 30px 0px;}
+.explore_map .explore_carousel h2{ float:left; width:100%; padding:0px 0px; 
+margin:0px 0px 20px 0px; font-size:30px; color:#FFF; text-align:center;}
+.owl-carousel.owl-loaded { float:left; width:100%;}
 .explore_map .explore_carousel .owl-item .item { min-height:297px; }
 .explore_map .explore_carousel  .owl-item .item .inner{ display:table; float:left; width:100%; min-height:297px; height:297px; }
 .explore_map .explore_carousel  .owl-item .item .inner .item_inner{ display:table-cell; vertical-align:middle; min-height:297px; }
@@ -38,10 +42,94 @@ a:active{text-decoration: none; color: #333;}
 .explore_carousel .owl-nav .owl-next{ background:url(../images/next.png) no-repeat 0px 0px; position:absolute; bottom:100px; right:-120px; width:54px; height:86px;  text-indent:-99999px;}
 
 
+.explore_map.week .explore_carousel{ float:left; width:100%; padding:00px 210px 50px; text-align:center;}
+.explore_map.week .explore_carousel .navigation{ margin:0px 0px 30px 0px;}
+.explore_map.week .explore_carousel h2{ float:left; width:100%; padding:0px 0px; 
+margin:0px 0px 20px 0px; font-size:30px; color:#FFF; text-align:center;}
+.owl-carousel.owl-loaded { float:left; width:100%;}
+.explore_map.week .explore_carousel .owl-item .item { min-height:424px; }
+.explore_map.week .explore_carousel  .owl-item .item .inner{ display:table; float:left; width:100%; min-height:424px; height:424px; }
+.explore_map.week .explore_carousel  .owl-item .item .inner .item_inner{ display:table-cell; vertical-align:middle; min-height:424px; }
+
+/*.explore_carousel .owl-item.cloned{ display:none;}*/
+.explore_map.week .explore_carousel .owl-item{ border:0px solid #FFF; max-height:424px;}
+.explore_map.week .explore_carousel .title{ position:absolute; bottom:0px; padding:10px 0px; text-align:center; color:#FFF; background:rgba(0,0,0,0.5); width:100%;}
+.explore_map.week .explore_carousel .owl-nav .owl-prev{ background:url(../images/prev.png) no-repeat 0px 0px; position:absolute; bottom:180px; left:-120px; width:54px; height:86px; text-indent:-99999px;}
+.explore_map.week .explore_carousel .owl-nav .owl-next{ background:url(../images/next.png) no-repeat 0px 0px; position:absolute; bottom:180px; right:-120px; width:54px; height:86px;  text-indent:-99999px;}
+
+
+
+
+
+/*==== WATCH PAGE HERE ======*/
+
+.explore_form{ float:left; width:100%; background:rgba(0,0,0,0.5); margin:40px 0px 40px 0px; padding:20px 0px 20px 0px;}
+.explore_form h2{ font-size:18px; color:#fff; border-bottom:1px solid #e8e8e8; padding:15px 0px 15px 20px; margin:0px 0px 20px 0px; float:left; width:100%; }
+
+.explore_form form{ float:left; margin:0px 0px 0px 0px;}
+.explore_form .form-field{ float:left; margin:0px 20px 25px 20px; width:29%;}
+.form-field label{ float:left; margin:0px 0px 8px 5px; width:100%; font-size:18px; color:#fff;}
+.form-field .textbox{ float:left; width:100%; border:1px solid #bababa; padding:8px 10px;  color:#333;
+
+-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=3, Direction=135, Color=#cecece)";/*IE 8*/
+-moz-box-shadow: inset 1px 1px 3px #cecece;/*FF 3.5+*/
+-webkit-box-shadow: inset 1px 1px 3px #cecece;/*Saf3-4, Chrome, iOS 4.0.2-4.2, Android 2.3+*/
+box-shadow: inset 1px 1px 3px #cecece;/* FF3.5+, Opera 9+, Saf1+, Chrome, IE10 */
+filter: progid:DXImageTransform.Microsoft.Shadow(Strength=3, Direction=135, Color=#cecece); /*IE 5.5-7*/
+
+}
+.form-field .textarea{ float:left; width:100%; border:1px solid #bababa; padding:8px 10px; height:92px; color:#999; text-transform:uppercase;
+
+-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=3, Direction=135, Color=#cecece)";/*IE 8*/
+-moz-box-shadow: inset 1px 1px 3px #cecece;/*FF 3.5+*/
+-webkit-box-shadow: inset 1px 1px 3px #cecece;/*Saf3-4, Chrome, iOS 4.0.2-4.2, Android 2.3+*/
+box-shadow: inset 1px 1px 3px #cecece;/* FF3.5+, Opera 9+, Saf1+, Chrome, IE10 */
+filter: progid:DXImageTransform.Microsoft.Shadow(Strength=3, Direction=135, Color=#cecece); /*IE 5.5-7*/
+
+}
+
+
+
+
+
+.explore_form .button{ float:left; width:100%; text-align:center; margin:10px 0px 0px 0px;}
+.explore_form .button .submit{background:#999; color:#FFF; display:inline-block; padding:20px 65px; font-size:16px; border:none;}
+
+.form-field .select_box{ float:left; width:100%; position:relative;}
+.form-field .select_box select{ 
+    -moz-appearance: none;
+    background-color: #ffffff;
+    background-position: right center;
+    background-repeat: no-repeat;
+    border: 1px solid #bababa;
+    border-radius: 3px;
+    cursor: pointer;
+    margin: 0px 0;
+    padding:7px 10px;
+    position: relative;
+    text-indent: 0.01px;
+    text-overflow: "";
+    width: 100%;
+}
+.form-field .select_box::after { background:url(../images/selct_arrow.jpg);
+    border-radius: 0 3px 3px 0;
+    content: "";
+    height: 6px;
+    pointer-events: none;
+    position: absolute;
+    right: 10px;
+    top: 13px;
+    width: 7px;
+}
+
+
+
+
+
 /*==== EXPLORE DETAIL HERE ======*/
 
-.explore_detail{ background:url(../images/explore_trans_bg.png) no-repeat center top; float:left; width:100%; height:100%; padding:64px 0px 80px 0px;}
-.explore_detail .festival_detail{ float:left; width:100%; padding:0px 60px; margin:0px 0px 50px 0px;}
+.explore_detail{ background:url(../images/explore_trans_bg.png) no-repeat center top; float:left; width:100%; height:100%; padding:35px 0px 80px 0px;}
+.explore_detail .festival_detail{ float:left; width:100%; padding:0px 60px; margin:30px 0px 50px 0px;}
 .explore_detail .festival_detail .thumb{ float:left; position:relative; max-width:216px; border:0px solid #FFF; max-height:294px;}
 .explore_detail .festival_detail .thumb .title{ position:absolute; bottom:0px; padding:10px 0px; text-align:center; color:#FFF; background:rgba(0,0,0,0.5); width:100%;}
 .explore_detail .festival_detail .content{ float:right; width:75%; color:#FFF;}
@@ -52,7 +140,7 @@ a:active{text-decoration: none; color: #333;}
 .explore_detail .festival_detail .content p{ font-size:14px; color:#FFF;}
 
 .selection_main{ float:left; width:100%; background:#620c0a;}
-.selection_main .content{ float:left; width:100%; background:#FFF; padding:25px 15px 15px; margin:-42px 0px 20px 0px;
+.selection_main .content{ float:left; width:100%; background:rgba(0,0,0,0.5); padding:25px 15px 15px; margin:-42px 0px 20px 0px;
 
 -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=10, Direction=180, Color=#666666)";/*IE 8*/
 -moz-box-shadow: 0px 3px 10px #666666;/*FF 3.5+*/
@@ -62,7 +150,7 @@ filter: progid:DXImageTransform.Microsoft.Shadow(Strength=10, Direction=180, Col
 
 }
 
-.selection_main .content h2{ float:left; width:100%; background: url(../images/map_head.jpg) no-repeat center 0px; padding:10px 0px; 
+.selection_main .content h2{ float:left; width:100%; background: url(../images/map_head.png) no-repeat center 0px; padding:10px 0px; 
 margin:0px 0px 25px 0px; font-size:30px; color:#FFF; text-align:center;}
 
 .selection_main .content .selections{ float:left; width:100%;}
@@ -89,7 +177,7 @@ margin:0px 0px 25px 0px; font-size:30px; color:#FFF; text-align:center;}
 
 .film_detail_main{ padding:50px 0px 0px 0px;}
 .film_details{ float:left; width:100%; background:#620c0a;}
-.film_details .content{ float:left; width:100%; background:#FFF; padding:25px 25px 15px; margin:-40% 0px 30px 0px; min-height:603px;
+.film_details .content{ float:left; width:100%; background:rgba(0,0,0,0.5); padding:25px 25px 15px; margin:-40% 0px 30px 0px; min-height:603px;
 
 -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=10, Direction=180, Color=#666666)";/*IE 8*/
 -moz-box-shadow: 0px 3px 10px #666666;/*FF 3.5+*/
@@ -102,7 +190,7 @@ filter: progid:DXImageTransform.Microsoft.Shadow(Strength=10, Direction=180, Col
 .film_details .content .thumb{ float:left; width:25%; position:relative; height:424px;max-height:424px;overflow:hidden}
 .film_details .content .thumb .inner{display: table; float: left; width: 100%; height: 424px; max-height: 424px;}
 .film_details .content .thumb .inner img{width:100%;float:left;}
-.film_details .content .detail_content{ float:left; width:45%; padding:0px 0px 0px 25px;}
+.film_details .content .detail_content{ float:left; width:45%; padding:0px 0px 0px 25px; color:#fff;}
 .film_details .content .detail_content .detail{ float:left; width:100%; margin:0px 0px 15px 0px; line-height:20px; }
 .film_details .content .detail_content .detail .fa{ font-size:18px;}
 .film_details .content .detail_content .detail p{line-height:22px; }
@@ -114,13 +202,14 @@ filter: progid:DXImageTransform.Microsoft.Shadow(Strength=10, Direction=180, Col
 .film_details .content .video{ float:right; width:30%;}
 .film_details .content .video .button{ float:left; width:100%; text-align:center; margin:15px 0px 0px 0px; }
 .film_details .content .video .button a{background:#999; color:#FFF; display:inline-block; padding:10px 25px; font-size:12px;}
-
+.film_details .content .video .fest-logo { float:left; width:100%; text-align:center; padding:45px 0px 0px 0px;}
+.film_details .content .video .fest-logo img{ max-width:150px;}
 
 /*==== EXPLORE MAP HERE ======*/
 
 .map_main{ float:left; width:100%; background:#620c0a;}
-.map_main .content{ float:left; width:100%; background:#FFF; padding:25px 15px 15px; margin:-42px 0px 30px 0px; text-align:center;
-
+.map_main .content{ float:left; width:100%; background:rgba(0,0,0,0.5); padding:25px 15px 15px; margin:-42px 0px 30px 0px; text-align:center;
+border:1px solid #fff;
 -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=10, Direction=180, Color=#666666)";/*IE 8*/
 -moz-box-shadow: 0px 3px 10px #666666;/*FF 3.5+*/
 -webkit-box-shadow: 0px 3px 10px #666666;/*Saf3-4, Chrome, iOS 4.0.2-4.2, Android 2.3+*/
@@ -129,23 +218,23 @@ filter: progid:DXImageTransform.Microsoft.Shadow(Strength=10, Direction=180, Col
 
 }
 
-.map_main .content h2{ float:left; width:100%; background: url(../images/map_head.jpg) no-repeat center 0px; padding:10px 0px; 
+.map_main .content h2{ float:left; width:100%; background: url(../images/map_head.png) no-repeat center 0px; padding:10px 0px; 
 margin:0px 0px 25px 0px; font-size:30px; color:#FFF; text-align:center;}
 
 
 /*==== FORM PAGES HERE ======*/
 
-.form_main{ background:url(../images/explore_trans_bg.png) no-repeat center top; float:left; width:100%; height:100%; padding:64px 0px 80px 0px;}
+.form_main{ background:url(../images/explore_trans_bg.png) no-repeat center top; float:left; width:100%; height:100%; padding:64px 0px 0px 0px;}
 .form_main .container{ max-width:1160px;}
 
 /*==== WATCH PAGE HERE ======*/
 
-.watch_form{ float:left; width:100%; background:#FFF; margin:20px 0px 40px 0px; padding:0px 0px 40px 0px;}
-.watch_form h2{ font-size:18px; color:#6e7172; border-bottom:1px solid #e8e8e8; padding:15px 0px 15px 20px; margin:0px 0px 20px 0px; float:left; width:100%; }
+.watch_form{ float:left; width:100%; background:rgba(0,0,0,0.5); margin:20px 0px 40px 0px; padding:20px 0px 20px 0px;}
+.watch_form h2{ font-size:18px; color:#fff; border-bottom:1px solid #e8e8e8; padding:15px 0px 15px 20px; margin:0px 0px 20px 0px; float:left; width:100%; }
 
 .watch_form form{ float:left; margin:0px 0px 0px 0px;}
 .watch_form .form-field{ float:left; margin:0px 20px 25px 20px;}
-.form-field label{ float:left; margin:0px 0px 8px 5px; width:100%; font-size:14px; color:#6e7172;}
+.form-field label{ float:left; margin:0px 0px 8px 5px; width:100%; font-size:18px; color:#fff;}
 .form-field .textbox{ float:left; width:100%; border:1px solid #bababa; padding:8px 10px;  color:#333;
 
 -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=3, Direction=135, Color=#cecece)";/*IE 8*/
@@ -210,9 +299,9 @@ filter: progid:DXImageTransform.Microsoft.Shadow(Strength=3, Direction=135, Colo
 
 /*==== SUBMIT FILM HERE ======*/
 
-.submit_film{ float:left; width:100%; background:#FFF; margin:20px 0px 40px 0px; padding:0px 0px 40px 0px;}
-.submit_film h2{ font-size:18px; color:#6e7172; border-bottom:1px solid #e8e8e8; padding:15px 0px 15px 20px; margin:0px 0px 20px 0px; float:left; width:100%; }
-.submit_film p{ text-align:center; line-height:25px; margin:0px 0px 20px 0px;}
+.submit_film{ float:left; width:100%; background:rgba(0,0,0,0.5); margin:20px 0px 40px 0px; padding:0px 0px 40px 0px;}
+.submit_film h2{ font-size:18px; color:#fff; border-bottom:1px solid #e8e8e8; padding:15px 0px 15px 20px; margin:0px 0px 20px 0px; float:left; width:100%; }
+.submit_film p{ text-align:center; color:#fff; line-height:25px; margin:0px 0px 20px 0px;}
 
 .submit_film .form-field{ float:left; margin:0px 20px 25px 20px;}
 
@@ -228,7 +317,7 @@ filter: progid:DXImageTransform.Microsoft.Shadow(Strength=3, Direction=135, Colo
 .submit_film .form-field.festival{ width:365px;}
 
 .submit_film_content{ float:left; width:100%; background:#620c0a;}
-.submit_film_content .content{ float:left; width:100%; background:#FFF; padding:65px 15px 35px; margin:-42px 0px 20px 0px; text-align:center;
+.submit_film_content .content{ float:left; width:100%;  background:rgba(0,0,0,0.5); padding:65px 15px 35px; margin:-42px 0px 20px 0px; text-align:center;
 
 -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=10, Direction=180, Color=#666666)";/*IE 8*/
 -moz-box-shadow: 0px 3px 10px #666666;/*FF 3.5+*/
@@ -238,14 +327,14 @@ filter: progid:DXImageTransform.Microsoft.Shadow(Strength=10, Direction=180, Col
 
 }
 
-.submit_film_content p{ font-size:18px; line-height:28px; margin:0px 0px 25px 0px;}
+.submit_film_content p{ font-size:18px; line-height:28px; margin:0px 0px 25px 0px; color:#fff;}
 
 
 /*CONTACT US HERE*/
 
 
-.contact_us{ float:left; width:100%; background:#FFF; margin:20px 0px 40px 0px; padding:40px 0px 40px 0px;}
-.contact_us h2{ font-size:18px; color:#6e7172; border-bottom:1px solid #e8e8e8; padding:0px 0px 15px 0px; margin:0px 0px 20px 0px; float:left; width:100%; }
+.contact_us{ float:left; width:100%; background:rgba(0,0,0,0.5); margin:20px 0px 40px 0px; padding:40px 0px 40px 0px;}
+.contact_us h2{ font-size:18px; color:#fff; border-bottom:1px solid #e8e8e8; padding:0px 0px 15px 0px; margin:0px 0px 20px 0px; float:left; width:100%; }
 
 .contact_us .form{ float:left; width:60%;}
 .contact_us .form-field{ float:left; margin:0px 0px 25px 20px;}
@@ -260,11 +349,11 @@ filter: progid:DXImageTransform.Microsoft.Shadow(Strength=10, Direction=180, Col
 
 
 .address{ float:right; width:25%; padding:0px 5% 0px 0px }
-.address h3{ color:#240807; font-weight:700; margin:0px 0px 2px 0px;}
-.address p{ color:#787878; }
+.address h3{ color:#fff; font-weight:700; margin:0px 0px 2px 0px;}
+.address p{ color:#fff; }
 
 .location_map{ float:left; width:100%; background:#620c0a;}
-.location_map .content{ float:left; width:100%; background:#FFF; padding:45px 15px 35px; margin:-42px 0px 20px 0px; text-align:center;
+.location_map .content{ float:left; width:100%; background:rgba(0,0,0,0.5); padding:45px 15px 35px; margin:-42px 0px 20px 0px; text-align:center;
 
 -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=10, Direction=180, Color=#666666)";/*IE 8*/
 -moz-box-shadow: 0px 3px 10px #666666;/*FF 3.5+*/
@@ -275,6 +364,12 @@ filter: progid:DXImageTransform.Microsoft.Shadow(Strength=10, Direction=180, Col
 }
 .location_map iframe{ width:100%; height:300px;}
 
+
+.about_us{ float:left; width:100%; background:rgba(0,0,0,0.5); margin:20px 0px 40px 0px; padding:20px;}
+.about_us h2{ font-size:18px; color:#fff; border-bottom:1px solid #e8e8e8; padding:0px 0px 15px 0px; margin:0px 0px 20px 0px; float:left; width:100%; }
+.about_us p{ font-size:14px; color:#fff; }
+
+
 /*NAVIGATION HERE*/
 
 .navigation{ float:left; width:100%; text-align:center;}
@@ -283,6 +378,8 @@ filter: progid:DXImageTransform.Microsoft.Shadow(Strength=10, Direction=180, Col
 .navigation ul li{ display:inline-block; list-style:none; margin:0px 15px 0px 0px;}
 .navigation ul li a{ display:block; background:rgba(0,0,0,0.5); width:220px; border:1px solid #FFF; padding:15px 0px; color:#FFF; text-transform:uppercase; }
 .navigation ul li a:hover,.navigation ul li a.active{ background:rgba(0,0,0,1); }
+.navigation ul li a.active{ background:#FF2121; }
+
 
 .m_menu{ float:right; width:34px; position:absolute; right:0px; margin:20px 20px 0px 0px; display:none;}
 .m_menu .menu{ cursor:pointer;}
@@ -293,7 +390,10 @@ filter: progid:DXImageTransform.Microsoft.Shadow(Strength=10, Direction=180, Col
 /*FOOTER HERE*/
 
 .bottom_bar{ float:left; width:100%; background:#240807;  padding: 0px 25px; border-top:1px solid #fff; position:relative; min-height:185px;}
-.bottom_bar .logo{ float:left; position:absolute; top:-87px; }
+.bottom_bar .logo{ float:left; position:absolute; top:-62px; right:50px; }
+.bottom_bar .logo a{ display:block;}
+
+.bottom_bar .logo .copyright{ float:left; width:100%; text-align:center; color:#fff;}
 .bottom_bar .social{ float:left; width: 100%; text-align:center; padding:56px 0px 0px 0px;}
 .bottom_bar .social ul li{ list-style:none; display:inline-block; margin:0px 8px 0px 0px;}
 .bottom_bar .social ul li a{ display:block; float:left;  padding:3px; width:66px; height:66px;
@@ -317,6 +417,12 @@ filter: progid:DXImageTransform.Microsoft.Shadow(Strength=10, Direction=180, Col
 
 .bottom_bar .social ul li a.google{ background:url(../images/google.png) no-repeat 0px 0px;}
 .bottom_bar .social ul li a.google:hover{ background:url(../images/google.png) no-repeat 0px -67px;}
+
+
+.bottom_bar .links{ float:left; width: 100%; text-align:center; padding:10px 0px 15px 0px;}
+.bottom_bar .links ul li{ list-style:none; display:inline-block; margin:0px 15px 0px 0px;}
+.bottom_bar .links ul li a{ color:#fff;}
+
 
 
 .btn_Margin {

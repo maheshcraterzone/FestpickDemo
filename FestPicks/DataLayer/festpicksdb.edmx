@@ -5,6 +5,17 @@
     <!-- SSDL content -->
     <edmx:StorageModels>
     <Schema Namespace="filmfestivaldb.Store" Provider="MySql.Data.MySqlClient" ProviderManifestToken="5.7" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="festival_held">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="smallint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="FestivalId" Type="int" Nullable="false" />
+          <Property Name="FromDate" Type="tinyint" />
+          <Property Name="ToDate" Type="tinyint" />
+          <Property Name="FestMonth" Type="varchar" MaxLength="15" Nullable="false" />
+          <Property Name="Year" Type="smallint" Nullable="false" />
+        </EntityType>
         <EntityType Name="festivaldetails">
           <Key>
             <PropertyRef Name="Id" />
@@ -21,6 +32,8 @@
           <Property Name="NextFestival" Type="varchar" MaxLength="50" />
           <Property Name="About" Type="blob" />
           <Property Name="FestivalYear" Type="varchar" MaxLength="50" />
+          <Property Name="HighlightFestival" Type="tinyint" Nullable="false" />
+          <Property Name="Region" Type="varchar" MaxLength="255" Nullable="false" />
         </EntityType>
         <EntityType Name="moviesdetails">
           <Key>
@@ -54,10 +67,47 @@
           <Property Name="MovieLink" Type="varchar" MaxLength="2083" />
           <Property Name="YoutubeEmbeddedCode" Type="blob" />
           <Property Name="Payload" Type="blob" />
+          <Property Name="HighlightFilm" Type="bool" Nullable="false" />
+          <Property Name="festival_id" Type="int" Nullable="false" />
+          <Property Name="DisplayFilm" Type="bool" Nullable="false" />
+          <Property Name="AmazonLinkRent" Type="varchar" MaxLength="512" />
         </EntityType>
+        <Association Name="fk_festival_id">
+          <End Role="festivaldetails" Type="Self.festivaldetails" Multiplicity="1" />
+          <End Role="moviesdetails" Type="Self.moviesdetails" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="festivaldetails">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="moviesdetails">
+              <PropertyRef Name="festival_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="fkr_festival_id">
+          <End Role="festivaldetails" Type="Self.festivaldetails" Multiplicity="1" />
+          <End Role="festival_held" Type="Self.festival_held" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="festivaldetails">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="festival_held">
+              <PropertyRef Name="FestivalId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
         <EntityContainer Name="filmfestivaldbStoreContainer">
+          <EntitySet Name="festival_held" EntityType="Self.festival_held" Schema="filmfestivaldb" store:Type="Tables" />
           <EntitySet Name="festivaldetails" EntityType="Self.festivaldetails" Schema="filmfestivaldb" store:Type="Tables" />
           <EntitySet Name="moviesdetails" EntityType="Self.moviesdetails" Schema="filmfestivaldb" store:Type="Tables" />
+          <AssociationSet Name="fk_festival_id" Association="Self.fk_festival_id">
+            <End Role="festivaldetails" EntitySet="festivaldetails" />
+            <End Role="moviesdetails" EntitySet="moviesdetails" />
+          </AssociationSet>
+          <AssociationSet Name="fkr_festival_id" Association="Self.fkr_festival_id">
+            <End Role="festivaldetails" EntitySet="festivaldetails" />
+            <End Role="festival_held" EntitySet="festival_held" />
+          </AssociationSet>
         </EntityContainer>
       </Schema></edmx:StorageModels>
     <!-- CSDL content -->
@@ -79,10 +129,23 @@
           <Property Name="NextFestival" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
           <Property Name="About" Type="Binary" MaxLength="Max" FixedLength="false" />
           <Property Name="FestivalYear" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="HighlightFestival" Type="SByte" Nullable="false" />
+          <NavigationProperty Name="moviesdetails" Relationship="filmfestivaldb.fk_festival_id" FromRole="festivaldetail" ToRole="moviesdetail" />
+          <Property Name="Region" Type="String" Nullable="false" MaxLength="255" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="festival_held" Relationship="filmfestivaldb.fkr_festival_id" FromRole="festivaldetail" ToRole="festival_held" />
         </EntityType>
         <EntityContainer Name="filmfestivaldbEntities" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="festivaldetails" EntityType="Self.festivaldetail" />
           <EntitySet Name="moviesdetails" EntityType="filmfestivaldb.moviesdetail" />
+          <AssociationSet Name="fk_festival_id" Association="filmfestivaldb.fk_festival_id">
+            <End Role="festivaldetail" EntitySet="festivaldetails" />
+            <End Role="moviesdetail" EntitySet="moviesdetails" />
+          </AssociationSet>
+          <EntitySet Name="festival_held" EntityType="filmfestivaldb.festival_held" />
+          <AssociationSet Name="fkr_festival_id" Association="filmfestivaldb.fkr_festival_id">
+            <End Role="festivaldetail" EntitySet="festivaldetails" />
+            <End Role="festival_held" EntitySet="festival_held" />
+          </AssociationSet>
         </EntityContainer>
         <EntityType Name="moviesdetail">
           <Key>
@@ -116,7 +179,48 @@
           <Property Name="MovieLink" Type="String" MaxLength="2083" FixedLength="false" Unicode="false" />
           <Property Name="YoutubeEmbeddedCode" Type="Binary" MaxLength="Max" FixedLength="false" />
           <Property Name="Payload" Type="Binary" MaxLength="Max" FixedLength="false" />
+          <Property Name="HighlightFilm" Type="Boolean" Nullable="false" />
+          <Property Name="festival_id" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="festivaldetail" Relationship="filmfestivaldb.fk_festival_id" FromRole="moviesdetail" ToRole="festivaldetail" />
+          <Property Name="DisplayFilm" Type="Boolean" Nullable="false" />
+          <Property Name="AmazonLinkRent" Type="String" MaxLength="512" FixedLength="false" Unicode="false" />
         </EntityType>
+        <Association Name="fk_festival_id">
+          <End Type="filmfestivaldb.festivaldetail" Role="festivaldetail" Multiplicity="1" />
+          <End Type="filmfestivaldb.moviesdetail" Role="moviesdetail" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="festivaldetail">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="moviesdetail">
+              <PropertyRef Name="festival_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="festival_held">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int16" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="FestivalId" Type="Int32" Nullable="false" />
+          <Property Name="FromDate" Type="SByte" />
+          <Property Name="ToDate" Type="SByte" />
+          <Property Name="FestMonth" Type="String" Nullable="false" MaxLength="15" FixedLength="false" Unicode="false" />
+          <Property Name="Year" Type="Int16" Nullable="false" />
+          <NavigationProperty Name="festivaldetail" Relationship="filmfestivaldb.fkr_festival_id" FromRole="festival_held" ToRole="festivaldetail" />
+        </EntityType>
+        <Association Name="fkr_festival_id">
+          <End Type="filmfestivaldb.festivaldetail" Role="festivaldetail" Multiplicity="1" />
+          <End Type="filmfestivaldb.festival_held" Role="festival_held" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="festivaldetail">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="festival_held">
+              <PropertyRef Name="FestivalId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
       </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
@@ -126,6 +230,8 @@
           <EntitySetMapping Name="festivaldetails">
             <EntityTypeMapping TypeName="filmfestivaldb.festivaldetail">
               <MappingFragment StoreEntitySet="festivaldetails">
+                <ScalarProperty Name="Region" ColumnName="Region" />
+                <ScalarProperty Name="HighlightFestival" ColumnName="HighlightFestival" />
                 <ScalarProperty Name="Id" ColumnName="Id" />
                 <ScalarProperty Name="FestivalName" ColumnName="FestivalName" />
                 <ScalarProperty Name="Lat" ColumnName="Lat" />
@@ -144,6 +250,10 @@
           <EntitySetMapping Name="moviesdetails">
             <EntityTypeMapping TypeName="filmfestivaldb.moviesdetail">
               <MappingFragment StoreEntitySet="moviesdetails">
+                <ScalarProperty Name="AmazonLinkRent" ColumnName="AmazonLinkRent" />
+                <ScalarProperty Name="DisplayFilm" ColumnName="DisplayFilm" />
+                <ScalarProperty Name="festival_id" ColumnName="festival_id" />
+                <ScalarProperty Name="HighlightFilm" ColumnName="HighlightFilm" />
                 <ScalarProperty Name="Payload" ColumnName="Payload" />
                 <ScalarProperty Name="YoutubeEmbeddedCode" ColumnName="YoutubeEmbeddedCode" />
                 <ScalarProperty Name="MovieLink" ColumnName="MovieLink" />
@@ -172,6 +282,18 @@
                 <ScalarProperty Name="FestivalFullName" ColumnName="FestivalFullName" />
                 <ScalarProperty Name="FestivalShortName" ColumnName="FestivalShortName" />
                 <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="festival_held">
+            <EntityTypeMapping TypeName="filmfestivaldb.festival_held">
+              <MappingFragment StoreEntitySet="festival_held">
+                <ScalarProperty Name="Year" ColumnName="Year" />
+                <ScalarProperty Name="FestMonth" ColumnName="FestMonth" />
+                <ScalarProperty Name="ToDate" ColumnName="ToDate" />
+                <ScalarProperty Name="FromDate" ColumnName="FromDate" />
+                <ScalarProperty Name="FestivalId" ColumnName="FestivalId" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

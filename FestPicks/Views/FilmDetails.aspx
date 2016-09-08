@@ -4,9 +4,8 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>Festpicks</title>
+    <title>FILM</title>
     <meta name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1' />
-    <link rel="shortcut icon" type="image/x-icon" href="../Content/images/favicon.ico" />
     <link href="../Content/css/main.css" rel="stylesheet" type="text/css">
     <link href="../Content/css/media.css" rel="stylesheet" type="text/css">
 
@@ -30,23 +29,22 @@
                 <img src="../Content/images/menu.png" alt="" />
             </div>
             <ul class="m_nav">
-                <li><a href="ExploreFestival">EXPLORE FESTIVALS</a></li>
-                <li><a href="WatchFilms">Watch Films</a></li>
-                <li><a href="SubmitYourFilm">SUBMIT YOUR FILM</a></li>
-                <li><a href="ContactUs">CONTACT US</a></li>
+                <li><a href="ExploreFestival.aspx">EXPLORE FESTIVALS</a></li>
+                <li><a href="WatchFilms.aspx" class="active">Watch Films</a></li>
+                
             </ul>
         </div>
         <div class="film_detail_main">
             <div class="container">
 
                 <nav class="navigation">
-                    <ul>
-                        <li><a href="ExploreFestival">EXPLORE FESTIVALS</a></li>
-                        <li><a href="WatchFilms">Watch Films</a></li>
-                        <li><a href="SubmitYourFilm">SUBMIT YOUR FILM</a></li>
-                        <li><a href="ContactUs">CONTACT US</a></li>
-                    </ul>
-                </nav>
+                        <ul>
+                            <li><a href="ExploreFestival.aspx">EXPLORE FESTIVALS</a></li>
+                            <li><a href="WatchFilms.aspx"  class="active">Watch Films</a></li>
+                            <!--<li><a href="SubmitYourFilm.aspx">SUBMIT YOUR FILM</a></li>
+                        <li><a href="ContactUs.aspx">CONTACT US</a></li>-->
+                        </ul>
+                    </nav>
             </div>
         </div>
     </section>
@@ -94,9 +92,13 @@
 
 
                 <div class="video">
+
                     <%--<iframe width="100%" height="202" src="https://www.youtube.com/embed/E_Ci-pAL4eE" frameborder="0" allowfullscreen></iframe>--%>
                     <asp:Literal ID="youtube" runat="server"></asp:Literal>
                     <div class="button"><a runat="server" id="ancrwatchfilm" >WATCH FILM</a></div>
+                    <div class="fest-logo">
+                    <img id='imgfestphotourl' runat="server" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Toronto_International_Film_Festival_logo.svg/2000px-Toronto_International_Film_Festival_logo.svg.png"/>
+                    </div>
                 </div>
             </div>
         </div>
@@ -104,15 +106,26 @@
 
     <footer class="bottom_bar">
         <div class="logo">
-            <a href="Home">
-                <img src="../Content/images/logo.png" alt="" /></a>
-        </div>
+                <a href="Home.aspx">
+                    <img src="../Content/images/logo.png" alt="" /></a>
+                <div class="copyright">© <%= DateTime.Now.Year.ToString() %> Festpicks</div>
+            </div>
         <div class="social">
             <ul>
                 <li><a href="#" class="face"></a></li>
                 <li><a href="https://twitter.com/festpicks" class="tweet" target="_blank"></a></li>
                 <li><a href="#" class="mail"></a></li>
                 <li><a href="#" class="google"></a></li>
+            </ul>
+        </div>
+        <div class="links">
+            <ul>
+                <li><a href="SubmitYourFilm.aspx">Filmmakers</a></li>
+                <li><a href="ContactUs.aspx">Contact Us</a></li>
+                <li><a href="AboutUs.aspx">About Us </a></li>
+                <li><a href="TermsOfUse.aspx">Terms of Use</a></li>
+                <li><a href="PrivacyPolicy.aspx" >Privacy Policy</a></li>
+                <li><a href="FAQ.aspx" >FAQ</a></li>
             </ul>
         </div>
     </footer>

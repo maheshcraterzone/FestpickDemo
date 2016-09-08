@@ -1,0 +1,34 @@
+<xml>
+  <Region>
+  <key>Select Region</key>
+  <value>-1</value>
+  </Region>
+  <Region>
+  <key>North America</key>
+  <value>North America</value>
+  </Region>
+  <Region>
+  <key>South America</key>
+  <value>South America</value>
+  </Region>
+  <Region>
+  <key>Europe</key>
+  <value>Europe</value>
+  </Region>
+  <Region>
+  <key>Middle East</key>
+  <value>Middle East</value>
+  </Region>
+  <Region>
+  <key>Africa</key>
+  <value>Africa</value>
+  </Region>
+  <Region>
+  <key>Asia</key>
+  <value>Asia</value>
+  </Region>
+  <Region>
+  <key>Oceania</key>
+  <value>Oceania</value>
+  </Region>
+</xml>

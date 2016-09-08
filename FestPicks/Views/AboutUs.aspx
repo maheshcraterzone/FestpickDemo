@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="SubmitYourFilm.aspx.cs" Inherits="FestPicks.Views.SubmitYourFilm" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="AboutUs.aspx.cs" Inherits="FestPicks.Views.TermsOfUse" %>
 
 <!doctype html>
 <html>
@@ -37,67 +37,27 @@
         </div>
         <div class="form_main">
             <nav class="navigation">
-                    <ul>
-                        <li><a href="ExploreFestival.aspx">EXPLORE FESTIVALS</a></li>
-                        <li><a href="WatchFilms.aspx">Watch Films</a></li>
-                        <!--<li><a href="SubmitYourFilm.aspx">SUBMIT YOUR FILM</a></li>
-                        <li><a href="ContactUs.aspx">CONTACT US</a></li>-->
-                    </ul>
-                </nav>
-
+                <ul>
+                    <li><a href="ExploreFestival.aspx">EXPLORE FESTIVALS</a></li>
+                    <li><a href="WatchFilms.aspx">Watch Films</a></li>
+                    <!--<li><a href="SubmitYourFilm.aspx">SUBMIT YOUR FILM</a></li>
+                    <li><a href="ContactUs.aspx">CONTACT US</a></li>-->
+                </ul>
+            </nav>
             <div class="container">
-                <div class="submit_film">
-                    <h2>Submit Your Film</h2>
-                    <p>
-                        Festpicks invites you to reach a global film-loving audience by submitting your film to our online film collection.  We offer an innovative streaming model with
-                        <br>
-                        the industry’s most generous revenue share.We limit films on our site to those that have been selected by at least one film festival.<br>
-                        Provide us with your details and we will contact you to arrange transfer.
-                    </p>
-                    <div class="form">
-                        <div class="form-field name">
-                            <input type="text" class="textbox" placeholder="NAME">
-                        </div>
-                        <div class="form-field email">
-                            <input type="text" class="textbox" placeholder="EMAIL">
-                        </div>
-                        <div class="form-field phone">
-                            <input type="text" class="textbox" placeholder="PHONE NO.">
-                        </div>
-                        <div class="form-field title">
-                            <input type="text" class="textbox" placeholder="FILM TITLE">
-                        </div>
-                        <div class="form-field year">
-                            <input type="text" class="textbox" placeholder="YEAR">
-                        </div>
-                        <div class="form-field director">
-                            <input type="text" class="textbox" placeholder="DIRECTOR NAME">
-                        </div>
-                        <div class="form-field festival">
-                            <input type="text" class="textbox" placeholder="FILM FESTIVAL">
-                        </div>
-                        <div class="button">
-                            <button class="submit">Submit</button>
-                        </div>
-                    </div>
-
+                <div class="about_us">
+                    <h2>About Us</h2>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
                 </div>
                 
             </div>
         </div>
     </section>
 
-    <div class="submit_film_content">
-        <div class="container">
-            <div class="content">
-                <p>
-                    Festpicks is proud to partner with FilmFreeway. FilmFreeway makes it easy to discover and submit to thousands of film festivals
-and screenplay contests all around the world. Best of all, Film Freeway is always 100% free for filmmakers and writers.
-                </p>
-                <a href="https://filmfreeway.com/sign_up" target="_blank"><img src="../Content/images/submit.png" alt="img" /></a>
-            </div>
-        </div>
-    </div>
+   
 
     <footer class="bottom_bar">
         <div class="logo">
