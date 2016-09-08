@@ -1,0 +1,58 @@
+<xml>
+  <Month>
+  <key>Select Month</key>
+  <value>-1</value>
+  </Month>
+  <Month>
+    <key>This Month</key>
+    <value>TM</value>
+  </Month>
+  <Month>
+    <key>Next Month</key>
+    <value>NM</value>
+  </Month>
+  <Month>
+  <key>January</key>
+  <value>January</value>
+  </Month>
+  <Month>
+  <key>February</key>
+  <value>February</value>
+  </Month>
+  <Month>
+  <key>March</key>
+  <value>March</value>
+  </Month>
+  <Month>
+  <key>April</key>
+  <value>April</value>
+  </Month>
+  <Month>
+  <key>May</key>
+  <value>May</value>
+  </Month>
+  <Month>
+  <key>June</key>
+  <value>June</value>
+  </Month>
+  <Month>
+  <key>July</key>
+  <value>July</value>
+  </Month>
+  <Month>
+  <key>August</key>
+  <value>August</value>
+  </Month><Month>
+  <key>September</key>
+  <value>September</value>
+  </Month><Month>
+  <key>October</key>
+  <value>October</value>
+  </Month><Month>
+  <key>November</key>
+  <value>November</value>
+  </Month><Month>
+  <key>December</key>
+  <value>December</value>
+  </Month>
+</xml>

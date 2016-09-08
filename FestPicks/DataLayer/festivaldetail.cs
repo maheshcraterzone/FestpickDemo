@@ -14,6 +14,12 @@ namespace FestPicks.DataLayer
     
     public partial class festivaldetail
     {
+        public festivaldetail()
+        {
+            this.moviesdetails = new HashSet<moviesdetail>();
+            this.festival_held = new HashSet<festival_held>();
+        }
+    
         public int Id { get; set; }
         public string FestivalName { get; set; }
         public decimal Lat { get; set; }
@@ -26,5 +32,10 @@ namespace FestPicks.DataLayer
         public string NextFestival { get; set; }
         public byte[] About { get; set; }
         public string FestivalYear { get; set; }
+        public sbyte HighlightFestival { get; set; }
+        public string Region { get; set; }
+    
+        public virtual ICollection<moviesdetail> moviesdetails { get; set; }
+        public virtual ICollection<festival_held> festival_held { get; set; }
     }
 }

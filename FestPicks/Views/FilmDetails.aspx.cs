@@ -31,7 +31,7 @@ namespace FestPicks.Views
 
         private void LoadDetails(int id)
         {
-            MovieDetailsModel movieDetails =  movieHandler.GetMovieDetailsById(id);
+            MovieWithFestivalDetails movieDetails = movieHandler.GetMovieDetailsById(id);
             if (movieDetails != null)
             {
                 ltrlAbout.Text = movieDetails.About;
@@ -45,12 +45,18 @@ namespace FestPicks.Views
                 ltrlTitle.Text = movieDetails.Name;
                 movieposter.Src = movieDetails.PosterUrl;
                 youtube.Text = movieDetails.YoutubeEmbeddedLink;
+                imgfestphotourl.Src = movieDetails.FestivalBannerUrl;
                 if (!string.IsNullOrEmpty(movieDetails.MovieLink))
                 {
                     ancrwatchfilm.HRef = "../Views/WatchMovie";
                 }
+                else if (!string.IsNullOrEmpty(movieDetails.AmazonLinkRent))
+                {
+                    ancrwatchfilm.Target = "_blank";
+                    ancrwatchfilm.HRef = movieDetails.AmazonLinkRent;
+                }
                 else
-                    ancrwatchfilm.HRef = "#";                
+                    ancrwatchfilm.HRef = "#";
             }
         }
     }

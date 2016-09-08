@@ -27,5 +27,6 @@ namespace FestPicks.DataLayer
     
         public virtual DbSet<festivaldetail> festivaldetails { get; set; }
         public virtual DbSet<moviesdetail> moviesdetails { get; set; }
+        public virtual DbSet<festival_held> festival_held { get; set; }
     }
 }

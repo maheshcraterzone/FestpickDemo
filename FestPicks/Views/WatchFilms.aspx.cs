@@ -18,7 +18,7 @@ namespace FestPicks.Views
         private const string DISABLE = "Disable";
         private const string ENABLE_METHOD = "javascript:Enable();";
         private const string DISABLE_METHOD = "javascript:Disable();";
-        private const string BANNER_DATA1 = "<div class=\"inner\"><div class=\"item_inner\"><a href=\"FilmDetails?Id=";
+        private const string BANNER_DATA1 = "<div class=\"inner\"><div class=\"item_inner\"><a href=\"FilmDetails.aspx?Id=";
         private const string BANNER_DATA2 = "\"><img runat=\"server\" src=\"";
         private const string BANNER_DATA3 = "\" alt=\"img\" >";
         private const string BANNER_DATA4 = "<div class=\"detail\"><h3>";
@@ -29,6 +29,12 @@ namespace FestPicks.Views
         private const string BANNER_DATA9 = "<br><strong>Actors:  </strong>";
         private const string BANNER_DATA10 = "</p><div class=\"time\"><i class=\"fa fa-clock-o\"></i> RunTime:  ";
         private const string BANNER_DATA11 = "</div></div></a></div></div>";
+        private const string HIGHLIGHTED_MOVIE_DATA1 = "<div class=\"inner\"><div class=\"item_inner\"><a href=\"FilmDetails.aspx?Id=";
+        private const string HIGHLIGHTED_MOVIE_DATA2 = "\"><img class=\"img_res\" runat=\"server\" src=\"";
+        private const string HIGHLIGHTED_MOVIE_DATA3 = "\" alt=\"img\" ></a></div></div>";
+        private const string DIV = "div";
+        private const string CSS_CLASS = "class";
+        private const string CSS_CLASS_NAME = "item";
         #endregion
         MovieHandler movieHandler = new MovieHandler();
         protected void Page_Load(object sender, EventArgs e)
@@ -36,8 +42,25 @@ namespace FestPicks.Views
             if (!IsPostBack)
             {
                 btnLoadMore.Enabled = false;
+                Session["Index"] = 0;
+                Session["List"] = null;
                 LoadFestival();
                 LoadGenre();
+                LoadMoviesCurrentYear();
+                CreateHighlightedMovieDiv();
+            }
+        }
+
+        private void LoadMoviesCurrentYear()
+        {
+            
+            List<MovieDetailsModel> list = movieHandler.GetAllMoviesCurrentYear(0);
+            if (list.Count == 20)
+            {
+                CreateTiles(list);
+                Session["Index"] = 1;
+                Session["List"] = list;
+                btnLoadMore.Enabled = true;
             }
         }
 
@@ -165,6 +188,27 @@ namespace FestPicks.Views
 
         }
 
+        private void CreateHighlightedMovieDiv()
+        {
+            HtmlGenericControl newdiv = null;
+            string festUrl = string.Empty;
+
+            List<HighlightMovieModel> list = movieHandler.GetHighlightMovies();
+            foreach (var obj in list)
+            {
+                string id = string.Empty;
+                
+                    festUrl = obj.MoviePosterUrl;
+                    id = obj.Id.ToString();
+                
+
+                newdiv = new HtmlGenericControl(DIV);
+                newdiv.Attributes.Add(CSS_CLASS, CSS_CLASS_NAME);
+                newdiv.InnerHtml = HIGHLIGHTED_MOVIE_DATA1 + id + HIGHLIGHTED_MOVIE_DATA2 + festUrl + HIGHLIGHTED_MOVIE_DATA3;
+                divhighlightedmovie.Controls.Add(newdiv);
+            }
+        }
+
         private bool IsSearchActive(SearchModel searchModel)
         {
             bool IsActive = true;
@@ -184,7 +228,11 @@ namespace FestPicks.Views
                 if (index > 0)
                 {
                     SearchModel search = (SearchModel)Session["Search"];
-                    List<MovieDetailsModel> newlist = movieHandler.GetMoviesBySearchCriteria(search, index);
+                    List<MovieDetailsModel> newlist;
+                    if (search != null)
+                        newlist = movieHandler.GetMoviesBySearchCriteria(search, index);
+                    else
+                        newlist = movieHandler.GetAllMoviesCurrentYear(index);
                     if (newlist != null)
                     {
                         List<MovieDetailsModel> oldlist = Session["List"] as List<MovieDetailsModel>;

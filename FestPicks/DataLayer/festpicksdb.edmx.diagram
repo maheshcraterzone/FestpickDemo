@@ -4,9 +4,13 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="47de06f235354c7ab028bf1d80bf9ec5" Name="Diagram1">
+      <Diagram DiagramId="47de06f235354c7ab028bf1d80bf9ec5" Name="Diagram1" ZoomLevel="95">
         <EntityTypeShape EntityType="filmfestivaldb.festivaldetail" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
         <EntityTypeShape EntityType="filmfestivaldb.moviesdetail" Width="1.5" PointX="3" PointY="0.75" />
+        <AssociationConnector Association="filmfestivaldb.fk_festival_id" />
+        <EntityTypeShape EntityType="filmfestivaldb.festival_held" Width="1.5" PointX="5.375" PointY="0.75" />
+        <AssociationConnector Association="filmfestivaldb.fkr_festival_id" />
+        <AssociationConnector Association="filmfestivaldb.fkr_festival_id" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

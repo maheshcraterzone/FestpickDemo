@@ -42,5 +42,11 @@ namespace FestPicks.DataLayer
         public string MovieLink { get; set; }
         public byte[] YoutubeEmbeddedCode { get; set; }
         public byte[] Payload { get; set; }
+        public bool HighlightFilm { get; set; }
+        public int festival_id { get; set; }
+        public bool DisplayFilm { get; set; }
+        public string AmazonLinkRent { get; set; }
+    
+        public virtual festivaldetail festivaldetail { get; set; }
     }
 }
